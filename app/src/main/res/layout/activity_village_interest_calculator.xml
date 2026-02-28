@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_50">
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Toolbar -->
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/teal_700"
+                app:title="Village Interest Calculator"
+                app:titleCentered="true"
+                app:titleTextColor="@android:color/white"
+                app:navigationIcon="@drawable/ic_menu"
+                app:navigationIconTint="@android:color/white"/>
+
+            <!-- Input Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="5dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/teal_200"
+                app:cardBackgroundColor="@color/teal_70">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Principal -->
+                    <TextView
+                        android:text="Principal Amount"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_800"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/etPrincipal"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Enter Principal"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edittext_white_border"/>
+
+                    <!-- Interest -->
+                    <TextView
+                        android:text="Interest per ₹100 (Monthly)"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_800"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/etRatePerHundred"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Example: 2"
+                        android:padding="10dp"
+                        android:inputType="numberDecimal"
+                        android:textSize="15sp"
+                        android:background="@drawable/edittext_white_border"/>
+
+                    <!-- Start Date -->
+                    <TextView
+                        android:text="Start Date"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_800"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/etStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="DD-MM-YYYY"
+                        android:padding="10dp"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:textSize="15sp"
+                        android:background="@drawable/edittext_white_border"/>
+
+                    <!-- End Date -->
+                    <TextView
+                        android:text="End Date"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_800"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/etEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="DD-MM-YYYY"
+                        android:padding="10dp"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:textSize="15sp"
+                        android:background="@drawable/edittext_white_border"/>
+
+                    <!-- Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCalculateInterest"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Calculate Interest"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"
+                        android:layout_marginTop="22dp"
+                        app:cornerRadius="16dp"
+                        app:backgroundTint="@color/teal_700"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Result Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/teal_700">
+
+                <TextView
+                    android:id="@+id/tvInterestResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:text="Result will appear here..."
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+
+        android:paddingBottom="16dp"
+
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@null"
+
+        app:itemBackground="@drawable/nav_item_bg"
+        app:itemHorizontalPadding="20dp"
+        app:itemIconPadding="16dp"
+        app:itemVerticalPadding="15dp"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

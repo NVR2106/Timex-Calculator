@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:textColor="#666666" />
+
+    <!-- Main Input Value (e.g., 7 hours) -->
+    <TextView
+        android:id="@+id/convertedInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7 hour"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp"
+        android:textColor="#007C91" />
+
+    <!-- Converted to Hours -->
+    <TextView
+        android:id="@+id/convertToHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="= 7 hours"
+        android:textSize="20sp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000" />
+
+    <!-- Converted to Minutes -->
+    <TextView
+        android:id="@+id/convertToMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="= 420 min"
+        android:textSize="20sp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000" />
+
+    <!-- Converted to Seconds -->
+    <TextView
+        android:id="@+id/convertToSeconds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="= 25,200 sec"
+        android:textSize="20sp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000" />
+
+    <!-- Converted to Milliseconds -->
+    <TextView
+        android:id="@+id/convertToMilliseconds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="= 25,200,000 ms"
+        android:textSize="20sp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000" />
+
+</LinearLayout>

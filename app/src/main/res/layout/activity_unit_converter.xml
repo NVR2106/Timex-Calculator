@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_50">
+
+    <!-- MAIN CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/teal_700"
+            app:title="Unit Converter"
+            app:titleCentered="true"
+            app:titleTextColor="@android:color/white"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+            app:navigationIcon="@drawable/ic_menu"
+            app:navigationIconTint="@android:color/white" />
+
+        <!-- Scroll Area -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            android:fillViewport="true">
+
+            <!-- MAIN CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/teal_300"
+                app:cardBackgroundColor="@color/teal_70">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- TITLE -->
+
+
+                    <!-- CATEGORY LABEL -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_900"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="1.5dp"
+                        app:strokeColor="@color/teal_700"
+                        app:cardBackgroundColor="@android:color/white">
+
+                        <Spinner
+                            android:id="@+id/spinnerCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:gravity="center_vertical"
+                            android:spinnerMode="dropdown"
+                            android:dropDownVerticalOffset="12dp"
+                            android:popupBackground="@drawable/spinner_popup_bg"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <!-- VALUE LABEL -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Value"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_900"
+                        android:layout_marginTop="12dp"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="1.5dp"
+                        app:strokeColor="@color/teal_700"
+                        app:cardBackgroundColor="@android:color/white">
+
+                        <EditText
+                            android:id="@+id/etValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:gravity="center_vertical"
+                            android:inputType="numberDecimal"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- FROM LABEL -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From Unit"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_900"
+                        android:layout_marginTop="12dp"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="1.5dp"
+                        app:strokeColor="@color/teal_700"
+                        app:cardBackgroundColor="@color/white">
+
+                        <Spinner
+                            android:id="@+id/spinnerFrom"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:spinnerMode="dropdown"
+                            android:dropDownVerticalOffset="12dp"
+                            android:popupBackground="@drawable/spinner_popup_bg"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- TO LABEL -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To Unit"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_900"
+                        android:layout_marginTop="12dp"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="1.5dp"
+                        app:strokeColor="@color/teal_700"
+                        app:cardBackgroundColor="@android:color/white">
+
+                        <Spinner
+                            android:id="@+id/spinnerTo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:gravity="center_vertical"
+                            android:spinnerMode="dropdown"
+                            android:dropDownVerticalOffset="12dp"
+                            android:popupBackground="@drawable/spinner_popup_bg"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <!-- CONVERT BUTTON -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnConvert"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="32dp"
+                        android:text="Convert"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        app:cornerRadius="34dp"
+                        app:backgroundTint="@color/teal_700"
+                        android:textColor="@android:color/white"/>
+
+                    <!-- RESULT CARD -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="1.5dp"
+                        app:strokeColor="@color/teal_700"
+                        app:cardBackgroundColor="@color/teal_700">
+
+                        <TextView
+                            android:id="@+id/tvResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Result will appear here"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+
+        android:paddingBottom="16dp"
+
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@null"
+
+        app:itemBackground="@drawable/nav_item_bg"
+        app:itemHorizontalPadding="20dp"
+        app:itemIconPadding="16dp"
+        app:itemVerticalPadding="15dp"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

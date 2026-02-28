@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- ================= APP ================= -->
+    <string name="app_name">TimeCalculator</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- ================= FUEL MODULE ================= -->
+
+    <string name="fuel_title">Fuel Cost Calculator</string>
+
+    <!-- Input Hints -->
+    <string name="distance_hint">Distance (KM)</string>
+    <string name="mileage_hint">Mileage (KM/L)</string>
+    <string name="fuel_price_hint">Fuel Price (₹/L)</string>
+
+    <!-- Buttons -->
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+
+    <!-- Result Labels -->
+    <string name="fuel_needed_label">Fuel Needed</string>
+    <string name="total_cost_label">Total Cost</string>
+
+    <!-- Default Values -->
+    <string name="fuel_default">0 L</string>
+    <string name="cost_default">₹ 0</string>
+
+    <!-- Accessibility -->
+    <string name="fuel_icon">Fuel icon</string>
+    <string name="rupee_icon">Rupee icon</string>
+
+    <string name="convert">Convert</string>
+    <string name="result_text">Result</string>
+    <string name="from_currency">From Currency</string>
+    <string name="to_currency">To Currency</string>
+    <string name="converted_amount">Converted Amount</string>
+
+
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- First logical group -->
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_calculator"
+            android:title="Calculator" />
+
+        <item
+            android:id="@+id/nav_age_calculator"
+            android:icon="@drawable/ic_age"
+            android:title="Age Calculator" />
+
+
+        <!-- Second logical group -->
+        <item
+            android:id="@+id/nav_duration_finder"
+            android:icon="@drawable/ic_duration"
+            android:title="Duration Calculator" />
+
+        <item
+            android:id="@+id/nav_money_calc"
+            android:icon="@drawable/ic_money"
+            android:title="Time-Based Money" />
+
+        <item
+            android:id="@+id/nav_village_interest"
+            android:title="Simple Interest"
+            android:icon="@drawable/accounts" />
+
+        <item
+            android:id="@+id/nav_number_to_words"
+            android:title="Number to Words"
+            android:icon="@drawable/ic_words"/>
+
+        <item
+            android:id="@+id/nav_notes_counter"
+            android:title="Notes Counter"
+            android:icon="@drawable/ic_notes"/>
+
+        <item
+            android:id="@+id/nav_unit_converter"
+            android:title="Unit Converter"
+            android:icon="@drawable/ic_converter"/>
+
+        <item
+            android:id="@+id/nav_currency_converter"
+            android:title="Currency Converter"
+            android:icon="@drawable/ic_rupee"/>
+
+        <item
+            android:id="@+id/nav_fuel_cost"
+            android:title="Fuel Cost Estimator"
+            android:icon="@drawable/ic_fuel"/>
+
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalcButton" parent="Widget.MaterialComponents.Button">
+        <!-- Width & Height -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:layout_columnWeight">1</item>
+
+        
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+
+</resources>

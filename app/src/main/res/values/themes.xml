@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme (Light only) -->
+    <style name="Base.Theme.TimeCalculator"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Disable automatic dark mode -->
+        <item name="android:forceDarkAllowed">false</item>
+
+        <!-- Optional: Define your brand colors here -->
+        <!-- <item name="colorPrimary">@color/primaryColor</item> -->
+        <!-- <item name="colorSecondary">@color/secondaryColor</item> -->
+
+    </style>
+
+    <!-- Final app theme -->
+    <style name="Theme.TimeCalculator"
+        parent="Base.Theme.TimeCalculator" />
+
+</resources>
